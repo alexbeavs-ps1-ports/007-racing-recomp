@@ -1,0 +1,98 @@
+{
+  "format_version": 1,
+  "id": "007-racing-psx",
+  "name": "007 Racing",
+  "kind": "recomp",
+  "platform": "psx",
+  "source_repo": "007-racing-recomp",
+  "rom_identity": {
+    "crc32": [
+      "5a39ae64"
+    ],
+    "md5": [
+      "2a51a718419e8d16e20e0ac8b5e59d24"
+    ],
+    "sha1": [
+      "91c0c4b5c888f074a777f891be5432064678070e"
+    ],
+    "disc_serials": [
+      "SLUS-01300"
+    ],
+    "sizes": [
+      565011552
+    ],
+    "filenames": [
+      "007 Racing (USA).cue",
+      "007 Racing (USA).bin"
+    ],
+    "track_counts": [
+      1
+    ],
+    "disc_fps": [
+      "7b1f00b5d2727d2a44e3732cfb0562ebd7c221ab57df163349b57e010d6d0723"
+    ],
+    "require_cue": true
+  },
+  "rom_extensions": [
+    ".cue",
+    ".bin",
+    ".chd"
+  ],
+  "bios_identity": {
+    "required": true,
+    "name": "SCPH1001.BIN",
+    "profile": "SCPH1001",
+    "crc32": [
+      "37157331"
+    ],
+    "md5": [
+      "924e392ed05558ffdb115408c263dccf"
+    ],
+    "sha1": [
+      "10155d8d6e6e832d6ea66db9bc098321fb5e8ebf"
+    ],
+    "sha256": [
+      "71af94d1e47a68c11e8fdb9f8368040601514a42a5a399cda48c7d3bff1e99d3"
+    ],
+    "sizes": [
+      524288
+    ],
+    "filenames": [
+      "SCPH1001.BIN"
+    ]
+  },
+  "release": {
+    "github": "alexbeavs-ps1-ports/007-racing-recomp",
+    "allow_prerelease": false,
+    "asset_glob": {
+      "windows-x64": "007-racing-*-windows-x64.zip",
+      "linux-x64": "007-racing-*-linux-x64.zip",
+      "macos-arm64": "007-racing-*-macos-arm64.zip",
+      "macos-x64": "007-racing-*-macos-x64.zip"
+    }
+  },
+  "launch": {
+    "windows": "007_racing.exe",
+    "linux": "007_racing",
+    "macos": "007_racing"
+  },
+  "build": {
+    "source": {
+      "github": "alexbeavs-ps1-ports/007-racing-recomp",
+      "ref": ""
+    },
+    "toolchain": {
+      "id": "cmake-clang-v1",
+      "min_version": "1.0.14"
+    },
+    "generate": {
+      "engine": "psxrecomp",
+      "config": "game.toml"
+    },
+    "cmake": {
+      "build_dir": "build",
+      "target": "psx-runtime",
+      "config": "Release"
+    }
+  }
+}
