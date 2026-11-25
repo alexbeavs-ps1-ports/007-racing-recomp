@@ -27,7 +27,6 @@ generated game code, or saved game.
 
 <!-- release-standard:bios -->
 **BIOS:** SCPH-1001 (USA) retail BIOS, 524288 bytes, SHA-256 `71af94d1e47a68c11e8fdb9f8368040601514a42a5a399cda48c7d3bff1e99d3`. Supply your own dump; releases do not use OpenBIOS.
-Setup keeps a copy of your BIOS in `%LOCALAPPDATA%\psxrecomp\bios` (Linux/macOS: `~/.local/share/psxrecomp/bios`); every PS1 recomp from this project finds it there. RecompLauncher does not ask for a BIOS, so put your dump there, named `SCPH1001.BIN`, before installing.
 <!-- /release-standard:bios -->
 
 ## Setup
@@ -73,7 +72,7 @@ BIOS/ROM/save plumbing so you are not stuck repeating each game’s wizard by ha
 ## Status
 
 Version 0.1.0. This kit was imported from the wave 6 census scaffold, which built
-on pin-j-v0.1.6 (psxrecomp `9bb84332b`, recomp-ui `1f79bfe`).
+on pin-j-v0.1.7 (psxrecomp `0d42588cc`, recomp-ui `1f79bfe`).
 No release package has been built from this kit yet, and no play testing is recorded.
 
 ## Diagnostic mode

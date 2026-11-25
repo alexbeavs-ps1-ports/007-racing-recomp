@@ -71,6 +71,8 @@ PRIVATE_FIXTURE_HASHES = {
     # Binding the exact bytes keeps the exemption narrow: any later edit to this
     # file fails the audit again.
     "psxrecomp/runtime/tests/test_setup_private_path_gate.py": "6F890A83A48726DF54B2459BD3BB706B575F819FAF9C768E30273B1F78912DA8",
+    "psxrecomp/runtime/tests/test_disc_roster.cpp": "DC419FFC8019E57CEE00892459509B4705B2A931DED2724BB3C4562A9FC75E03",
+    "recomp-ui/tests/psx_kb_profiles_test.c": "F7D914837573E0F95D6CD0592B5A967B7338D777262097CFC589FED6AF2ECAD9",
 }
 
 
